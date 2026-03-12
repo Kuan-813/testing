@@ -1,23 +1,27 @@
 # TITLE: INDEXING AND SLICING
 text = "Python Programming"
 
-print(text[0])                      # [first character]     # Output: P     
-print(text[-1])                     # [last character]      # Output: g
-print(text[0:6])                    # [slice 0 to 5]        # Output: Python
-print(text[:6])                     # [from start to 5]     # Output: Python
-print(text[7:])                     # [from 7 to 17]        # Output: Programming
+print(text[0])                                                            # [first character]     # Output: P     
+print(text[-1])                                                           # [last character]      # Output: g
+print(text[0:6])                                                          # [slice 0 to 5]        # Output: Python
+print(text[:6])                                                           # [from start to 5]     # Output: Python
+print(text[7:17])                                                         # [from 7 to 17]        # Output: Programming
 
 
 
 # TITLE: STRING METHODS
 name = "bob the builder"
 
-print(len(name))                    # [length]              # Output: 15
-print(name.strip())                 # [remove whitespace]   # Output: bob the builder
-print(name.upper())                 # [upper case]          # Output: BOB THE BUILDER
-print(name.lower())                 # [lower case]          # Output: bob the builder 
-print(name.title())                 # [title case]          # Output: Bob The Builder
-print(name.replace("bob", "kim"))   # [replace]             # Output: kim the builder
+print(len(name))                                                          # [length]              # Output: 15
+print(name.strip())                                                       # [remove whitespace]   # Output: bob the builder
+print(name.upper())                                                       # [upper case]          # Output: BOB THE BUILDER
+print(name.lower())                                                       # [lower case]          # Output: bob the builder 
+print(name.title())                                                       # [title case]          # Output: Bob The Builder
+print(name.replace("bob", "kim"))                                         # [replace]
+print(name.find("the"))                                                   # [find substring]      # Output: 4
+print("the" in name)                                                      # [check substring]     # Output: True (case sensitive)
+print("The" in name)                                                      # [check substring]     # Output: False (case sensitive)
+print("fisherman" not in name)                                            # [check substring]     # Output: True
 
 
 
@@ -38,7 +42,6 @@ print(message_3)                                                          # Outp
 # TITLE: EXERCISE_01
 # 1. Build a simple text analyzer that counts words, characters, and sentences in a given text,
 import string
-
 
 text = """Python is a powerful programming language.
 It's easy to learn and versatile!

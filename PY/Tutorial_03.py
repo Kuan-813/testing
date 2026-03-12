@@ -1,6 +1,6 @@
 # TITLE: INPUT/OUTPUT VALIDATION
 name = input("Enter your name: ")
-height = float(input("Enter your height: "))                        # Convert to float
+height = float(input("Enter your height: "))                                # Convert to float
 
 # Input:
 while True:
@@ -21,9 +21,9 @@ print(f"You are {age} years old and {height} feet tall.")
 
 # TITLE: EXERCISE_01
 # 1. [SINGLE CALCULATION] Create a simple calculator that takes two numbers and an operator from user.
-num1 = float(input("Enter first number: "))                         # Convert to float
+num1 = float(input("Enter first number: "))                                 # Convert to float
 operator = input("Enter operator (+, -, *, /): ")
-num2 = float(input("Enter second number: "))                        # Convert to float
+num2 = float(input("Enter second number: "))                                # Convert to float
 
 # Input:
 if operator == "+":
